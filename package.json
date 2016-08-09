@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlexBezuska/Family-Album/issues"
   },
-  "homepage": "https://github.com/AlexBezuska/Family-Album#readme"
+  "homepage": "https://github.com/AlexBezuska/Family-Album#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
