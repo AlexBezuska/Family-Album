@@ -1,0 +1,91 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+
+html {
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0
+  background: #edeff2;
+}
+
+header{
+  font-family: "Josefin Sans", Georgia, serif;
+  margin: 0 0 15px 0;
+  padding: 5px 15px;
+  background: #b548d7;
+  color: white;
+  position: relative;
+}
+
+.imageBox{
+  margin: 0 auto 25px auto;
+  width: 90vw;
+  display: block;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 7px 2px rgba(0,0,0,0.15);
+}
+
+.imageArea{
+  position: relative;
+
+}
+.imageBox input{
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+label{
+  margin-bottom: 2px;
+}
+
+label span {
+  display: block;
+  font-size: 10px;
+}
+
+.imageBox img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  display: block;
+}
+
+.imageBox .formArea{
+  padding: 10px;
+  width: 100%;
+}
+
+.fullSizeBtn{
+  background: #b548d7;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 15px 0 0 16px;
+  border-radius: 65px;
+  width: 65px;
+  height: 65px;
+  font-size: 36px !important;
+  box-shadow: 0 1px 4px 1px rgba(0,0,0,0.3);
+}

@@ -1,18 +1,32 @@
 var express = require('express');
+var exphbs = require('express3-handlebars');
 var fs = require('fs');
-var app = express();
-var photosPath = "photos"
-app.use(express.static('public'));
 
+var app = express();
+
+app.use(express.static('public'));
+app.engine('handlebars', exphbs({defaultLayout: 'index'}));
+app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
 
-  fs.readdir("public/" + photosPath, function(err, items) {
-    var html ="";
+  fs.readdir("public/photos", function(err, items) {
+    var photoData =[];
+    var count = 0;
     for (var i=0; i<items.length; i++) {
-        html += '<img src="http://localhost:3000/' + photosPath + '/' + items[i] + '" style="width: 200px;"/>';
+      // ignore files starting with '.'
+      if( /^\./.test(items[i])){ continue; }
+      var photo = {
+        "image": items[i]
+      };
+      photoData.push(photo);
+      count++;
     }
-    res.send(html);
+    res.render('layouts/index', {
+      heading: 'Family Album',
+      count: count,
+      photos: photoData
+    });
   });
 
 });

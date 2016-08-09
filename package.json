@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/AlexBezuska/Family-Album#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "express3-handlebars": "^0.5.2",
+    "handlebars": "^4.0.5"
   }
 }

@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+
+<header>
+  <h1>{{heading}}</h1>
+  <p> {{count}} Photos!</p>
+</header>
+
+<div id="photos">
+  {{#each photos}}
+  <div class="imageBox">
+    <div class="imageArea">
+      <img src="photos/{{this.image}}"/>
+      <i class="fa fa-expand fullSizeBtn"></i>
+    </div>
+    <div class="formArea">
+      <label>Date taken:</label>
+      <input type="date" class="dateTaken" ></input>
+      <label>Event name:</label>
+      <input type="text" class="event" placeholder="event name"></input>
+      <label>People: <span>(comma separated, left to right)</span></label>
+      <input type="text" class="tags" placeholder="Bonnie, Larry, Elex"></input>
+      <label>Tags: <span>(comma separated)</span></label>
+      <input type="text" class="tags" placeholder="tags"></input>
+    </div>
+  </div>
+  {{/each}}
+</div>
