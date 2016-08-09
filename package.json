@@ -1,0 +1,19 @@
+{
+  "name": "family-album",
+  "version": "0.0.0",
+  "description": "Create a webpage of photos and crowd-source metadata/exif from your family members.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexBezuska/Family-Album.git"
+  },
+  "author": "Alex Bezuska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexBezuska/Family-Album/issues"
+  },
+  "homepage": "https://github.com/AlexBezuska/Family-Album#readme"
+}
