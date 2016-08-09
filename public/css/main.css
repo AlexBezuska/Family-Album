@@ -1,31 +1,48 @@
-@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600i';
 
 html {
   box-sizing: border-box;
-
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body{
   margin: 0;
-  padding: 0
+  padding: 0;
   background: #edeff2;
 }
 
 header{
-  font-family: "Josefin Sans", Georgia, serif;
-  margin: 0 0 15px 0;
-  padding: 5px 15px;
+  margin: 0;
+  padding: 5px 18px;
   background: #b548d7;
   color: white;
   position: relative;
 }
 
+header h1{
+  font-family: "Josefin Sans", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0;
+}
+header h2{
+  font-family: "Josefin Sans", Georgia, serif;
+  font-size: .8rem;
+  font-style: italic;
+  margin-top: 0;
+}
+
+#photos{
+  padding: 15px;
+}
+
 .imageBox{
   margin: 0 auto 25px auto;
-  width: 90vw;
+  width: 100%;
   display: block;
   background: white;
   border-radius: 15px;
@@ -77,6 +94,7 @@ label span {
 }
 
 .fullSizeBtn{
+  cursor: pointer;
   background: #b548d7;
   color: white;
   position: absolute;
@@ -88,4 +106,9 @@ label span {
   height: 65px;
   font-size: 36px !important;
   box-shadow: 0 1px 4px 1px rgba(0,0,0,0.3);
+  transition: all 500ms ease-in-out;
+}
+
+.fullSizeBtn:hover{
+  transform: scale(1.1) rotate(15deg);
 }
